@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANVAS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="row main-container">
+        <div class="col-12 header">
+            <div class="row header-main">
+                <div class="col-4 function ">
+                    <div class="row function-icons">
+                        <i class="bi bi-pencil-fill pencil-button tools" id="active-tool-box"></i>
+                        <i class="bi bi-eraser-fill eraser-button tools" id="active-tool-box"></i>
+                        <i class="bi bi-plus-circle-fill clear-button tools" id="active-tool-box"></i>
+                        <div class="upload-button tools">
+                            <label for="file-input">
+                                <i class="bi bi-card-image"></i>
+                            </label>
+                            <input class="image-input" type="file" accept="image/*" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 heading-name">Writing Board</div>
+                <div class="col-4 color-picker">
+                    <div class="row color-box">
+                        <div class="col-3 red colors" id="option"></div>
+                        <div class="col-3 blue colors" id="option"></div>
+                        <div class="col-3 green colors" id="option"></div>
+                        <div class="col-3 black active-color colors" id="option"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 main">
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+
+    <script src="canvas.js"></script>
+    <script src="image.js"></script>
+    <script src="pencilcolor.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+.main-container {
+    height: 100vh;
+    width: 100vw;
+}
+
+.header {
+    height: 10%;
+    width: 100%;
+    position: absolute;
+}
+
+.header-main {
+    height: 100%;
+    background-color: #c6ae1e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heading-name{
+    color: #eeeed0;
+    font-size: 40px;
+    font-family: "Madimi One", sans-serif;
+    letter-spacing: 3px;
+}
+.function-icons {
+    color: #eeeed0;
+    margin-left: 20px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tools{
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tools:hover{
+    cursor: pointer;
+    outline: rgb(124, 123, 123) solid;
+    outline-offset: 2px;
+}
+
+.upload-button>input {
+    display: none;
+}
+
+.image-box {
+    position: absolute;
+    top: 270px;
+    left: 650px;
+    /* z-index: 3; */
+    /* height: fit-content; */
+    /* max-width: 250px; */
+    
+}
+
+.image-container {
+    height: 200px;
+    max-width: 200px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.delete-image {
+    cursor: pointer;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    top: 0px;
+    right: 0px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+
+.color-picker {
+    height: 100%;
+    margin-right: 20px;
+}
+
+.color-box {
+    height: 100%;
+    padding: 23px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.colors{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+}
+
+.colors:hover {
+    cursor: pointer;
+    outline: rgb(124, 123, 123) solid;
+    outline-offset: 2px;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.black {
+    background-color: black;
+}
+
+.active-color {
+    outline: rgb(238, 238, 208) solid;
+    outline-offset: 2px;
+}
+
+.main {
+    position: absolute;
+    top: 10%;
+    height: 90%;
+    width: 100%;
+    background-color: rgb(238, 238, 208);
+}
